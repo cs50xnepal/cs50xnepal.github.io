@@ -33,52 +33,52 @@ const testimonials = [
     name: 'Suraj Bhattarai',
     position: 'President',
     photo:
-      'assets/instructor/suraj-bhattarai',
+      'assets/instructor/suraj-bhattarai.png',
     text:
       "As a community leader, it's always important for him to focus on engagement and contributions while also empowering members in reach.",
   },
   {
-    name: 'Nabin Khair',
-    position: 'Developer',
-    photo: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD510X9fz2pybgGhdMXpUC-afnrCvZ1Ljpxa2u1p51v9Ya4bAlA64H2E4_qSQ6cNzOuwqx6DyMqIBUqOHvCwAzdHYLXUlcgs6WHg7eBVlKW6PAPHBQv7AJgRhvE4juscFsJ4hzThrq0YJXFYh-vKMfAkTFyGzpMiLLCUZKDy-1VGxs0cpPltrJbgpRNdI/s1600/profile-pic%20%281%29.png',
+    name: 'Manoj Bhattarai',
+    position: 'CSIT Student',
+    photo: 'https://shorturl.at/cdpLR',
     text:
-      'Nabin Khair, a web developer student hailing from Nepal. With a robust background in website design, building, and customization, I bring a wealth of experience to the digital realm. ',
+      "CS50x's innovative curriculum, coupled with renowned professors at Harvard, has enhanced the academic environment. It's not just about academic success; it's about nurturing well-rounded individuals ready for the dynamic field of computer science. And with the local adaptation'CS50x Nepal' it's no different,",
   },
   {
-    name: 'Himesh Reshimiya',
-    position: 'Software Engineer',
-    photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+    name: 'Anupam Kandel',
+    position: 'BEI Student at IOE Purwanchal Campus',
+    photo: 'https://shorturl.at/ksBRZ',
     text:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, aliquid! Eaque id officia nostrum sequi praesentium fugit tempore doloremque nihil repudiandae.',
+      "The exposure to top-notch lectures from prestigious universities is a game-changer for students. It's a fantastic initiative that prepares them for real-world challenges.",
   },
   {
-    name: 'Kamlesh',
-    position: 'Project Manager',
+    name: 'Priya Thapa',
+    position: 'BEI Student at IOE Purwanchal Campus',
     photo: 'https://randomuser.me/api/portraits/women/68.jpg',
     text:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, aliquid! Eaque id officia nostrum sequi praesentium fugit tempore doloremque nihil repudiandae.",
+      "Being an alumna of IOE Purwanchal Campus, I wish I had the opportunity to experience CS50x Nepal during my time. The exposure to top-notch lectures from prestigious universities is a game-changer for students.",
   },
   {
-    name: 'Bikku Baby',
-    position: 'Lover Boy',
+    name: 'Rajesh Adhikari',
+    position: 'BCT Student IOE Purwanchal Campus',
     photo: 'https://randomuser.me/api/portraits/men/65.jpg',
     text:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, aliquid! Eaque id officia nostrum sequi praesentium fugit tempore doloremque nihil repudiandae",
+      "As an educator, I am delighted to witness the positive impact of CS50x Nepal on our students. The curriculum aligns seamlessly with our academic goals, and the students' enthusiasm is palpable.",
   },
   {
     name: 'Rabin Khadka',
-    position: 'Graphic Designer',
+    position: 'Engineering Student',
     photo: 'https://randomuser.me/api/portraits/men/43.jpg',
     text:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, aliquid! Eaque id officia nostrum sequi praesentium fugit tempore doloremque nihil repudiandae",
+      "The native adaptation of lectures and activities made learning computer science enjoyable and relevant to our culture.",
   },
   {
-    name: 'Prakash Bashyal',
+    name: 'Pranisha Bashyal',
     position: 'Agriculture Engineer',
     photo:
       'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb',
     text:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, aliquid! Eaque id officia nostrum sequi praesentium fugit tempore doloremque nihil repudiandae.',
+    "The event format added a sense of community and excitement. I appreciate the commitment to education, and the use of the CC BY-NC-SA 4.0 license ensures that knowledge is shared freely.",
   },
 ]
 
@@ -125,6 +125,7 @@ function createRipple(event) {
       ripple.remove();
     }, 600);
   }
+  
 
   /*Button Ends*/
 

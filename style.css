@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Poppins';
   user-select: none;
-  color: #efefef;
 }
 
 a{
@@ -13,9 +12,11 @@ a{
   display: inline;
 }
 
-ul{
-  list-style: none;
+.subsc{
+  text-decoration: none;
+  color: #efefef;
 }
+
 
 
 
@@ -31,12 +32,13 @@ ul{
   text-align: center;
   background-color: #161616;
   font-weight: 600;
+  padding-top: 10px;
 }
 /*Navigation bar Starts*/
 .nav {
   width: 100%;
   background-color: #aa3131;
-  padding: 15px 30px; /* Adjusted padding for better responsiveness */
+  padding: 15px 30px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,11 +158,19 @@ ul{
 }
 
 .home .home-left{
-  display: flex;
+  display: inline;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.home .home-left .tit{
+  color: #808074;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+
 }
 
 .home .home-right{
@@ -191,9 +201,9 @@ ul{
 .about{
   padding:150px;
   background-color: #161616;
-  color:#efefef;
   padding:50px 50px 50px 150px;
   flex-direction: row;
+  color:#efefef;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
@@ -230,6 +240,18 @@ ul{
   transition: all 0.3s ease;
   text-align: justify;
 }
+.about-row .about-right ul{
+  list-style: none;
+  text-align: justify;
+}
+
+.about-row .about-right ul li:before{
+  content: '\2022'; 
+  color: #808074; 
+  width: 1em;
+  display: inline-block;
+  margin-left: -1em;
+}
 
 .about-row .about-left:hover{
   box-shadow: 0 0 10px 0px #c10000;
@@ -247,19 +269,7 @@ ul{
   font-weight: 600;
 }
 
-.about ul .tick{
-  list-style: none; 
-  padding: 0;
-  text-align: justify;
-  line-height: normal;
-  margin: 0;
-  flex-wrap: wrap;
-}
 
-.about ul li:before{
-      content: "✅";
-      padding:  5px 2px 2px 5px;     
-}
 
 @media (max-width: 1100px) {
   .home .home-right img{
@@ -291,8 +301,13 @@ ul{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: justify;
     align-items: center;
     justify-content: center;
+  }
+
+  .about .about-right{
+    padding: 10px 20px 10px 50px;
   }
 }
 
@@ -477,6 +492,23 @@ input[type="radio"]{
   }
 }
 
+@media (max-width: 768px) {
+  .sponser{
+    height: 15vh;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  }
+  .sponser img{
+    height: 100px;
+    width:100px;
+    object-fit: contain;
+    opacity: 30%;
+    transition: all 0.3s ease;
+  }
+  
+}
 
 
 
@@ -670,6 +702,19 @@ padding-top: 20px;
   transition: all 0.5s ease-in-out;
 }
 
+.load-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  height: 5vh;
+  width: 20%;
+  color: #efefef;
+  background-color: #c10000;
+  border: #efefef 1px solid;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 1200px) {
   .faq-content{
     padding: 20px;
@@ -753,15 +798,16 @@ padding-top: 20px;
   }
   .s-logo img:hover{
 	  padding-left: 8px;
-	  
 	  opacity: .5;
   }
   
+
   .ripple-btn {
+	  position: relative;
 	  overflow: hidden;
 	  background-color: #c10000;
 	  border: 1px #ff0100 solid;
-	  color: #efefef;
+	  color: #ffffff;
 	  padding: 12px 24px;
 	  cursor: pointer;
 	  border-radius: 6px;
@@ -769,6 +815,7 @@ padding-top: 20px;
 	  margin-top: 20px;
 	}
 	.ripple {
+	  position: absolute;
 	  border-radius: 50%;
 	  background: rgba(216, 216, 216, 0.7);
 	  transform: scale(0);
@@ -818,8 +865,13 @@ padding-top: 20px;
 .footer .row{
   display: flex;
   padding: 100px;
-  
 }
+
+.footer ul{
+  list-style: none;
+}
+
+
 .footer-col{
    width: 100%;
   flex-basis: 50%;
@@ -831,6 +883,7 @@ padding-top: 20px;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
+  position: relative;
 }
 .footer-col p{
 	font-size: 14px;
@@ -847,6 +900,7 @@ padding-top: 20px;
 }
 .footer-col h4::before{
 	content: '';
+	position: absolute;
 	left:0;
 	bottom: -10px;
 	background-color: #ff0100;
@@ -988,14 +1042,25 @@ padding-top: 20px;
 
 }
 #code-of-conduct{
-  margin:25px 250px 10px 250px;
+  margin:25px 250px 30px 250px;
   text-align: justify;
   flex-wrap: wrap;
+  color:#efefef;
 }
 
+#code-of-conduct ul{
+  list-style: none;
+  text-align: justify;  
+}
+#code-of-conduct h1{
+  color: #c10000;
+}
 #code-of-conduct ul li:before{
-  content: "✅";
-  padding:  5px 2px 2px 18px;     
+  content: '\2022'; 
+  color: #808074; 
+  width: 1em;
+  display: inline-block;
+  margin-left: -1em;
 }
 .head{
   color:#cf1000;
