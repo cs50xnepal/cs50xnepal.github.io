@@ -30,56 +30,52 @@ const role = document.querySelector('.role')
 
 const testimonials = [
   {
-    name: 'Suraj Bhattarai',
-    position: 'President',
-    photo:
-      'assets/instructor/suraj-bhattarai.png',
-    text:
-      "As a community leader, it's always important for him to focus on engagement and contributions while also empowering members in reach.",
-  },
-  {
     name: 'Manoj Bhattarai',
-    position: 'CSIT Student',
+    position: 'Management Student, Mahendra Shanti Secondary School',
     photo: 'https://shorturl.at/cdpLR',
     text:
-      "CS50x's innovative curriculum, coupled with renowned professors at Harvard, has enhanced the academic environment. It's not just about academic success; it's about nurturing well-rounded individuals ready for the dynamic field of computer science. And with the local adaptation'CS50x Nepal' it's no different,",
+      "I am a Management with Computer Science(optional) student. For me, CS50x been an enriching experience, providing me with a wealth of knowledge. CS50x is an exceptional course that offers high-quality content for free, providing tremendous value to students worldwide. I am excited hearing CS50x Nepal.",
   },
   {
     name: 'Anupam Kandel',
-    position: 'BEI Student at IOE Purwanchal Campus',
+    position: 'BEI Student, IOE Purwanchal Campus',
     photo: 'https://shorturl.at/ksBRZ',
     text:
-      "The exposure to top-notch lectures from prestigious universities is a game-changer for students. It's a fantastic initiative that prepares them for real-world challenges.",
+      "The exposure to top-notch lectures from Prof. David J. Malan is a game-changer for students. I am lucky to find it in my very first year at university.",
   },
   {
-    name: 'Priya Thapa',
-    position: 'BEI Student at IOE Purwanchal Campus',
-    photo: 'https://randomuser.me/api/portraits/women/68.jpg',
+    name: 'Gaurav Bohara',
+    position: 'BCA, NAST',
+    photo: 'https://shorturl.at/aEN15',
     text:
-      "Being an alumna of IOE Purwanchal Campus, I wish I had the opportunity to experience CS50x Nepal during my time. The exposure to top-notch lectures from prestigious universities is a game-changer for students.",
+      "Going through the lectures before my project helped me with various other projects as well. I can say that I am confident with my skills, all thanks to CS50x lectures.",
   },
   {
-    name: 'Rajesh Adhikari',
-    position: 'BCT Student IOE Purwanchal Campus',
-    photo: 'https://randomuser.me/api/portraits/men/65.jpg',
+    name: 'Bibek Bist',
+    position: 'Computer Engineering, New Summit College',
+    photo: 'https://shorturl.at/dyGX7',
     text:
-      "As an educator, I am delighted to witness the positive impact of CS50x Nepal on our students. The curriculum aligns seamlessly with our academic goals, and the students' enthusiasm is palpable.",
+      "I am delighted to hear on the positive impact of CS50x Nepal on students in Nepal. The curriculum is smooth for begineers. I absolutely loved it.",
   },
-  {
-    name: 'Rabin Khadka',
-    position: 'Engineering Student',
-    photo: 'https://randomuser.me/api/portraits/men/43.jpg',
-    text:
-      "The native adaptation of lectures and activities made learning computer science enjoyable and relevant to our culture.",
-  },
-  {
-    name: 'Pranisha Bashyal',
-    position: 'Agriculture Engineer',
+    
+  /*{
+    name: '#',
+    position: '#',
     photo:
-      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb',
+      '#',
     text:
-    "The event format added a sense of community and excitement. I appreciate the commitment to education, and the use of the CC BY-NC-SA 4.0 license ensures that knowledge is shared freely.",
+    "#",
   },
+  
+  {
+    name: '#',
+    position: '#',
+    photo:
+      '#',
+    text:
+    "#",
+  }, */
+    
 ]
 
 let idx = 1
