@@ -34,7 +34,7 @@ const testimonials = [
     position: 'Management Student, Mahendra Shanti Secondary School',
     photo: 'https://shorturl.at/cdpLR',
     text:
-      "I am a Management with Computer Science(optional) student. For me, CS50x been an enriching experience, providing me with a wealth of knowledge. CS50x is an exceptional course that offers high-quality content for free, providing tremendous value to students worldwide. I am excited hearing CS50x Nepal.",
+      "For me, CS50x been an enriching experience, providing me with a wealth of knowledge. CS50x is an exceptional course that offers high-quality content for free, providing tremendous value to students worldwide.",
   },
   {
     name: 'Anupam Kandel',
