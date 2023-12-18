@@ -338,6 +338,7 @@ a{
   justify-content: space-evenly;
   width: 200%;
   transition: 1s;
+	margin-top: 10px;
 }
 #two:checked ~ .main-card{
   margin-left: -100%;
