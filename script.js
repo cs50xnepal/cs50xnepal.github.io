@@ -32,7 +32,7 @@ const testimonials = [
   {
     name: 'Manoj Bhattarai',
     position: 'Management Student, Mahendra Shanti Secondary School',
-    photo: 'https://scontent-bom2-1.xx.fbcdn.net/v/t39.30808-6/275499219_1155070548596286_3040508233176366884_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=t8CpODNDqqUAX8VpfEw&_nc_ht=scontent-bom2-1.xx&oh=00_AfAzre9CwpEXdYFJE5mdW0Ni00L-YshQvuuldBFy2RHf2A&oe=659013DC',
+    photo: 'assets/manoj.jpg',
     text:
       "For me, CS50x been an enriching experience, providing me with a wealth of knowledge. CS50x is an exceptional course that offers high-quality content for free, providing tremendous value to students worldwide.",
   },
