@@ -102,7 +102,7 @@ export default function App() {
 					<Button
 						as={Link}
 						className="px-0 py-0 font-semibold sm:text-xs md:text-base text-base"
-						href="#"
+						href="/hackathon"
 						variant="flat">
 						CS50AI Hackathon🔥
 					</Button>
