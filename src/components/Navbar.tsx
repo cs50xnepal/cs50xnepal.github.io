@@ -98,7 +98,7 @@ export default function App() {
 				))}
 			</NavbarContent>
 			<NavbarContent justify="end">
-				<NavbarItem className="sm:px-0  sm:py-2 text-base px-4 py-2  rounded-md text-offWhite border-primaryPurple  bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple md:px-6 md:py-3">
+				<NavbarItem className="sm:px-0  sm:py-2 text-base px-4 py-1 rounded-md text-offWhite border-primaryPurple  bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple md:px-6 md:py-1">
 					<Button
 						as={Link}
 						className="px-0 py-0 font-semibold sm:text-xs md:text-base text-base"
