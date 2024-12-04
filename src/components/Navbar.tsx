@@ -104,7 +104,7 @@ export default function App() {
 						className="px-0 py-0 font-semibold sm:text-xs md:text-base text-base"
 						href="#"
 						variant="flat">
-						Get Started🔥
+						CS50AI Hackathon🔥
 					</Button>
 				</NavbarItem>
 			</NavbarContent>

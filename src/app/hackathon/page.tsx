@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from './main';
 import Track from './features';
+import Register from './register';
+import FAQ from './FAQ';
 export default function Instructor() {
 	return (
 		<>
@@ -15,6 +17,8 @@ export default function Instructor() {
 				</p>
 				<Track />
 			</div>
+			<FAQ />
+			<Register />
 		</>
 	);
 }
