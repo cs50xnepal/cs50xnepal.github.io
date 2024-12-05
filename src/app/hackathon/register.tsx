@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import RegisterIm from '@/app/hackathon/assets/Register.svg';
+import { Link } from '@nextui-org/react';
 
 export default function Register() {
 	return (
@@ -22,8 +23,8 @@ export default function Register() {
 						Spots are limited, so don’t wait! Participation is completely free.
 					</p>
 					<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex">
-						<a
-							href="#"
+						<Link
+							href="/"
 							title=""
 							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
 							role="button">
@@ -42,7 +43,7 @@ export default function Register() {
 								/>
 							</svg>
 							Sign Up for Hackathon
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

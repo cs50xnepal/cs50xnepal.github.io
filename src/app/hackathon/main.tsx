@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { Link } from '@nextui-org/react';
 
 export default function Hero() {
 	return (
@@ -20,8 +21,8 @@ export default function Hero() {
 							</p>
 
 							<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-								<a
-									href="#"
+								<Link
+									href="/"
 									title=""
 									className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
 									role="button">
@@ -40,7 +41,7 @@ export default function Hero() {
 										/>
 									</svg>
 									Sign Up for Hackathon
-								</a>
+								</Link>
 							</div>
 
 							<p className="mt-8 text-base text-gray-500">
