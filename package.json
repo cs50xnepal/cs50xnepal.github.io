@@ -12,6 +12,7 @@
 		"@gsap/react": "^2.1.1",
 		"@nextui-org/accordion": "^2.0.40",
 		"@nextui-org/card": "^2.0.34",
+		"@nextui-org/image": "^2.0.32",
 		"@nextui-org/navbar": "^2.0.37",
 		"@nextui-org/react": "^2.4.8",
 		"@nextui-org/system": "^2.2.6",

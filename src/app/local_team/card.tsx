@@ -1,6 +1,7 @@
-import { Card, CardHeader, CardBody, Image } from '@nextui-org/react';
+import { Card, CardHeader, CardBody } from '@nextui-org/react';
 import { ITeam } from '@/app/local_team/team_list_type';
 import { Chip } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 
 export default function App({ Teams }: { Teams: ITeam[] }) {
 	return (

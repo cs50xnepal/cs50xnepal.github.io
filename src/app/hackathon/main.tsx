@@ -9,7 +9,7 @@ export default function Hero() {
 					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 						<div className="max-w-2xl mx-auto text-center">
 							<h1 className="px-6 text-lg text-gray-600">
-								📅 Mangsir 29, 2081 – Mangsir 30, 2081
+								📅 To be Decided...
 							</h1>
 							<p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
 								CS50 AI

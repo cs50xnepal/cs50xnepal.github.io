@@ -7,12 +7,12 @@ import { FaAddressCard } from 'react-icons/fa';
 export default function FAQ() {
 	return (
 		<>
-			<div className="py-12 flex flex-col sm:flex-row justify-center align-center bg-offPurple">
-				<div className="flex flex-col justify-center items-center px-4 sm:px-8 py-4 sm:py-0">
+			<div className="py-12 sm:pe-8 flex flex-col sm:flex-row justify-center align-start bg-offPurple">
+				<div className="flex flex-col justify-center items-center pe-10 py-4 sm:py-0 lg:w-2/4">
 					<h1 className="px-6 flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 						Have a Question?
 					</h1>
-					<p className="text-sm py-3 px-6 sm:px-28 lg:w-[80%] mx-auto  text-center text-textBlue ">
+					<p className="text-sm py-3 px-6 sm:px-16 mx-auto  text-center text-textBlue ">
 						We have put together the answers you have been looking for. If there
 						is an answer you cannot find, please let us know on .
 					</p>
@@ -26,8 +26,8 @@ export default function FAQ() {
 						</a>
 					</div>
 				</div>
-				<div className="flex justify-center items-center px-4 sm:px-8">
-					<Image src={FAQIm} alt="Register Image" width={300} height={200} />
+				<div className="flex justify-center items-center">
+					<Image src={FAQIm} alt="Register Image" width={400} height={400} />
 				</div>
 			</div>
 		</>
