@@ -85,11 +85,10 @@ export default function App() {
 				justify="center">
 				{menuItems.map(([link, title], index) => (
 					<NavbarItem
-						className={`h-[40%] flex items-center  text-textBlue transition-all duration-200 hover:text-primaryRed focus:text-primaryRed ${
-							isActive(link)
+						className={`h-[40%] flex items-center  text-textBlue transition-all duration-200 hover:text-primaryRed focus:text-primaryRed ${isActive(link)
 								? 'border-b-3 overflow-hidden border-spacing-7 rounded-sm border-primaryPurple text-primaryPurple hover:border-primaryRed focus:border-primaryRed'
 								: ''
-						} ${title === 'Syllabus' ? 'syllabus' : ''}`}
+							} ${title === 'Syllabus' ? 'syllabus' : ''}`}
 						key={`${title}-${index}`}>
 						<Link className="sm:text-sm md:text-base text-base" href={link}>
 							{title}
@@ -99,23 +98,16 @@ export default function App() {
 			</NavbarContent>
 			<NavbarContent justify="end">
 				<NavbarItem className="sm:px-0  sm:py-2 text-base px-4 py-1 rounded-md text-offWhite border-primaryPurple  bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple md:px-6 md:py-1">
-					<Button
-						as={Link}
-						className="px-0 py-0 font-semibold sm:text-xs md:text-base text-base"
-						href="/hackathon"
-						variant="flat">
-						CS50AI Hackathon🔥
-					</Button>
+					<Link href="/event">Get Started 🔥</Link>
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarMenu className="bg-offYellow text-textBluefont-medium h-auto-important">
 				{menuItems.map(([link, title], index) => (
 					<NavbarMenuItem
-						className={`hover:text-primaryRed focus:text-primaryRed transition-all duration-200 px-2 ${
-							isActive(link)
+						className={`hover:text-primaryRed focus:text-primaryRed transition-all duration-200 px-2 ${isActive(link)
 								? 'border-s-3 overflow-hidden rounded-sm border-primaryPurple text-primaryPurple hover:border-primaryRed focus:border-primaryRed '
 								: ''
-						} ${title === 'Syllabus' ? 'syllabus2' : ''}`}
+							} ${title === 'Syllabus' ? 'syllabus2' : ''}`}
 						key={`${title}-${index}`}>
 						<Link className="w-full" href={link} size="md">
 							{title}
