@@ -7,10 +7,12 @@ import AboutUs from '@/app/about/AboutUs';
 import Testimonials from '../app/testimonials/page';
 import Sponsor from '../app/sponsors/page';
 import Instructor from './instructors/page';
+import RegistrationPopup from './event/registration/RegistrationPopUp';
 
 export default function Home() {
 	return (
 		<>
+			<RegistrationPopup />
 			<section className="h-full sm:h-[84.5vh] items-center flex bg-offWhite overflow-hidden px-6 sm:px-6 md:px-8 lg:px-24 xl:px-32 mt-10 sm:mt-0">
 				{/* Heading/Introduction */}
 				<div className="flex flex-col items-center sm:flex-row md:gap-0 lg:gap-8 xl:gap-11">
@@ -30,12 +32,12 @@ export default function Home() {
 							applications,engage with hands-on projects,and join a growing
 							community of future innovators.
 						</p>
-						<Button
-							className="mt-4 w-40 text-base rounded-md text-offWhite border-primaryPurple font-semibold bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple px-12 py-6 flex justify-center items-center"
-							as={Link}
-							variant="flat">
+						<Link
+							href={'/event'}
+							className="mt-4 w-40 h-12 flex text-base rounded-md text-offWhite border-primaryPurple font-semibold bg-primaryPurple border-3 transition-all duration-500 hover:bg-offWhite hover:text-primaryPurple hover:border-primaryPurple justify-center items-center"
+						>
 							Get Started 🔥
-						</Button>
+						</Link>
 					</div>
 					{/* Image div */}
 					<div className="flex flex-col justify-center items-center">
