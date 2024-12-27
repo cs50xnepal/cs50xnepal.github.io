@@ -8,8 +8,8 @@ import cs50A02 from './assets/cs50A02.png';
 import cs50A03 from './assets/cs50A03.png';
 import cs50A04 from './assets/cs50A04.png';
 import cs50B01 from './assets/cs50B01.png';
-import cs50B02 from './assets/cs50B02.jpg';
-import cs50B03 from './assets/cs50B03.jpg';
+import cs50B02 from './assets/cs50B02.png';
+import cs50B03 from './assets/cs50B03.png';
 import cs50B04 from './assets/cs50B04.png';
 import cs50C01 from './assets/cs50C01.png';
 import cs50C02 from './assets/cs50C02.png';
@@ -20,142 +20,124 @@ import cs50D02 from './assets/cs50D02.png';
 import cs50D03 from './assets/cs50D03.png';
 import cs50D04 from './assets/cs50D04.png';
 import cs50E01 from './assets/cs50E01.png';
-import cs50E02 from './assets/cs50E02.png';
+import cs50E02 from './assets/cs50E02.jpg';
 import cs50E03 from './assets/cs50E03.png';
 import cs50E04 from './assets/cs50E04.png';
-import cs50F01 from './assets/cs50F01.png';
-import cs50F02 from './assets/cs50F02.png';
-import cs50F03 from './assets/cs50F03.png';
-import cs50F04 from './assets/cs50F04.png';
-import cs50G01 from './assets/cs50G01.png';
-import cs50G02 from './assets/cs50G02.png';
-import cs50G03 from './assets/cs50G03.png';
-import cs50G04 from './assets/cs50G04.png';
+import { ul } from 'framer-motion/client';
 
 type timelineEntry = {
 	title: string;
 	description: string;
-	items: string[];
+	items: string[][];
+	primaryHeading?: string[];
 	images: StaticImport[];
 };
 const timelineData: timelineEntry[] = [
 	{
-		title: 'WEEK 0 Search',
+		title: 'Week 1: Python and Database Foundations and Setup',
 		description:
-			'Week 0 introduces the basics of artificial intelligence, covering key concepts like problem-solving and intelligent agents to set the foundation for AI learning.',
+			'Week 1 introduces the basics of artificial intelligence, covering key concepts like problem-solving and intelligent agents to set the foundation for AI learning.',
+		primaryHeading: ['Day 1: Python Foundation', 'Day 2: Data Management'],
 		items: [
-			'Search Problems',
-			'Depth-First Search',
-			'Breadth-First Search',
-			'Greedy Best-First Search',
-			'A* Search',
-			'Minimax',
-			'Alpha-Beta Pruning',
+			[
+				'Setting up a development environment',
+				'Introduction to Python for Data Science',
+				'Object-Oriented Programming in Python(over View matra)',
+				'Best practices and advanced Python concepts',
+				'Error Handling and Debugging',
+				'Assessment and Feedback(Instructor Should design)',
+			],
+			[
+				'Introduction to SQL',
+				'Database Design',
+				'Database Querying',
+				'Practical',
+			],
 		],
 		images: [cs50A01, cs50A02, cs50A03, cs50A04],
 	},
 	{
-		title: 'WEEK 1 Knowledge',
+		title: 'WEEK 2: Mathemematics and Statistics',
 		description:
-			'Week 1 dives into the basics of knowledge representation, reasoning, and logic, and how they are used in AI applications.',
+			'In Week 2, we build a strong foundation in the mathematical and statistical concepts essential for machine learning and AI.',
+		primaryHeading: ['Day 1: Mathematics for ML', 'Day 2: Statistics for ML'],
 		items: [
-			'Propositional Logic',
-			'Entailment',
-			'Inference',
-			'Model Checking',
-			'Resolution',
-			'First-Order Logic',
+			[
+				'Linear Algebra',
+				'Vectors and Matrices',
+				'Calculus',
+				'Set Theory and Logic',
+				'Graph Theory',
+			],
+			[
+				'Introduction to Statistics with Python of AI',
+				'Descriptive Statistics',
+				'Inferential Statistics',
+				'Probability Distributions',
+				'Practical',
+			],
 		],
 		images: [cs50B01, cs50B02, cs50B03, cs50B04],
 	},
 	{
-		title: 'WEEK 2 Uncertainty',
+		title: 'WEEK 3: Data Preprocessing and Exploration',
 		description:
-			'Week 2 explores the concept of uncertainty in AI and how it is managed using probability theory and Bayesian networks.',
+			'Master essential skills in web scraping, advanced data preprocessing techniques, and data visualization to prepare and analyze data effectively for AI applications.',
+		primaryHeading: [
+			'Day 1: Web Scraping',
+			'Day 2: Data Preprocessing Techniques',
+			'Day 3: Data Visualization',
+		],
 		items: [
-			'Probability',
-			'Conditional Probability',
-			'Random Variables',
-			'Independence',
-			'Bayes Rule',
-			'Joint Probability',
-			'Bayesian Networks',
-			'Sampling',
-			'Markov Models',
-			'Hidden Markov Models',
+			[],
+			[
+				'Advanced data Preprocessing with Python',
+				'Handling Missing Values',
+				'Feature Engineering',
+				'PCA',
+				'Outlier Detection and Treatment',
+				'Normalisation and Scaling',
+			],
+			[
+				'Understanding Data Visualtization',
+				'Introduction to MatPlotLib',
+				'Introduction to Seaborn',
+				'Advanced-Data Visualization Techniques',
+				'Storytelling with Data',
+				'Visualization Tools: (Introduction to Tableau, PowerBI, etc.)',
+			],
 		],
 		images: [cs50C01, cs50C02, cs50C03, cs50C04],
 	},
 	{
-		title: 'WEEK 3 Optimization',
+		title: 'WEEK 4: Machine Learning',
 		description:
-			'Week 3 covers optimization techniques in AI, including constraint satisfaction problems, local search, and optimization algorithms.',
+			'In Week 4, Dive into core machine learning concepts, exploring supervised learning techniques like regression and classification, and unsupervised learning methods such as clustering and dimensionality reduction.',
+		primaryHeading: [
+			'Day 1: Supervised Learning: Regression and Classification Algorithms',
+			'Day 2: Unsupervised Learning: Clustering and Dimensionality Reduction',
+		],
 		items: [
-			'Local Search',
-			'Hill Climbing',
-			'Simulated Annealing',
-			'Linear Programming',
-			'Constraint Satisfaction',
-			'Backtracking Search',
+			[
+				'Introduction to Regression',
+				'Linear Regression',
+				'Polynomial Regression',
+				'Mean Absolute Error and Mean Squared Error',
+			],
+			['K-Means Clustering', 'Hierarchical Clustering', 'DBSCAN', 'PCA'],
 		],
 		images: [cs50D01, cs50D02, cs50D03, cs50D04],
 	},
 	{
-		title: 'WEEK 4 Learning',
+		title: 'WEEK 5: Practical Applications',
 		description:
-			'Week 4 delves into machine learning and how it is used to build intelligent systems that can learn from data and improve over time.',
+			'In Week 5, Apply your knowledge to real-world scenarios with an end-to-end machine learning project and team-based supervised project implementation.',
+		primaryHeading: ['Day 1: End to End Project', 'Day 2: Supervised Project'],
 		items: [
-			'Superised Learning',
-			'Nearest Neighbor Classifiers',
-			'Perceptrons Learning',
-			'Support Vector Machines',
-			'Regression',
-			'Loss Functions',
-			'Overfitting',
-			'Regularization',
-			'Reinforcement Learning',
-			'Markov Decision Processes',
-			'Q-Learning',
-			'Unsupervised Learning',
-			'K-Means Clustering',
+			['Machine Learning Project'],
+			['Team Based Project Implementation'],
 		],
 		images: [cs50E01, cs50E02, cs50E03, cs50E04],
-	},
-	{
-		title: 'WEEK 5 Neural Networks',
-		description:
-			'Week 5 introduces neural networks and deep learning, covering the basics of artificial neural networks and how they are used in AI applications.',
-		items: [
-			'Artificial Neural Networks',
-			'Activation Functions',
-			'Gradient Descent',
-			'Backpropagation',
-			'Overfitting',
-			'TensorFlow',
-			'Image Convolution',
-			'Convolutional Neural Networks',
-			'Recurrent Neural Networks',
-		],
-		images: [cs50F01, cs50F02, cs50F03, cs50F04],
-	},
-	{
-		title: 'WEEK 6 Language',
-		description:
-			'Week 6 explores natural language processing and how AI is used to process and understand human language.',
-		items: [
-			'Syntax',
-			'Semantics',
-			'Context-Free Grammars',
-			'nlTK',
-			'n-grams',
-			'Bags of Words',
-			'Naïve Bayes Classifiers',
-			'Word Representations',
-			'word2vec',
-			'Attention Mechanisms',
-			'Transformers',
-		],
-		images: [cs50G01, cs50G02, cs50G03, cs50G04],
 	},
 ];
 export default function TimelineDemo() {
@@ -166,17 +148,24 @@ export default function TimelineDemo() {
 				<p className="text-textBlue text-xs md:text-sm font-normal mb-8">
 					{entry.description}
 				</p>
-				<div className="mb-8">
-					<div className="flex flex-col gap-2 items-left text-textBlue text-xs md:text-sm">
-						{entry.items.map((item, indexedDB) => (
-							<div
-								key={indexedDB}
-								className="flex gap-2 items-center text-xs md:text-sm">
-								🔥 {item}
+				<ul className="list-none mb-8">
+					{entry.primaryHeading?.map((heading, index) => (
+						<li key={index} className="mb-4">
+							<h4 className="text-md font-semibold text-textBlue mb-2">
+								{heading}
+							</h4>
+							<div className="flex flex-col gap-2 items-left text-textBlue text-xs md:text-sm ml-4">
+								{entry.items[index]?.map((item, idx) => (
+									<div
+										key={idx}
+										className="flex gap-2 items-center text-xs md:text-sm">
+										🔥 {item}
+									</div>
+								))}
 							</div>
-						))}
-					</div>
-				</div>
+						</li>
+					))}
+				</ul>
 				<div className="grid grid-cols-2 gap-4">
 					{entry.images.map((image, index) => (
 						<Image
