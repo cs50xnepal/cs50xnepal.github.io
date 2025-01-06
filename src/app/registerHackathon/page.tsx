@@ -18,9 +18,10 @@ export default function Page() {
 						</h2>
 						<p className="text-sm text-textBlue font-medium">
 							🚀 Welcome to the Hackathon Registration Portal! This is your
-							opportunity to bring your boldest ideas to life. Whether you're a
-							code wizard 🧙‍♂️, a design guru 🎨, or just someone with big dreams,
-							there's a spot for you here. Let's build the future together! 🌟
+							opportunity to bring your boldest ideas to life. Whether
+							you&apos;re a code wizard 🧙‍♂️, a design guru 🎨, or just someone
+							with big dreams, there&apos;s a spot for you here. Let&apos;s
+							build the future together! 🌟
 						</p>
 						<p className="text-sm text-textBlue mt-4">
 							💡{' '}
@@ -29,7 +30,7 @@ export default function Page() {
 							</span>
 							<br /> Collaborate with the brightest minds, solve real-world
 							problems, and showcase your skills to industry leaders. Plus,
-							you'll make some awesome memories along the way! 🌍✨
+							you&apos;ll make some awesome memories along the way! 🌍✨
 						</p>
 					</div>
 					{/* Embed Form */}
