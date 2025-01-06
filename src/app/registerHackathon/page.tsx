@@ -46,9 +46,9 @@ export default function Page() {
 					{/* Footer Text */}
 					<div className="text-center mt-10 px-6">
 						<p className="text-sm text-textBlue font-medium">
-							🌟 Don’t wait! Spots are filling up fast. Gather your team,
+							🌟 Don&apos;t wait! Spots are filling up fast. Gather your team,
 							register now, and get ready for an unforgettable experience. We
-							can't wait to see you there! 🙌
+							can&apos;t wait to see you there! 🙌
 						</p>
 					</div>
 					{/* Commented Section */}
