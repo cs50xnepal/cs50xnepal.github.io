@@ -143,12 +143,7 @@ const TestimonialsMarquee: FC<Props> = ({ isReversed = false, className }) => {
 
 	return (
 		// changes the entire background
-		<div
-			className="w-full py-8 px-1 sm:px-16"
-			style={{
-				background:
-					'linear-gradient(to bottom, #f6f6f6, #f6f6f6, #E0E0FF,#E0E0FF, #E0E0FF, #f6f6f6)',
-			}}>
+		<div className="w-full py-8 px-1 sm:px-16 bg-offPurple">
 			<div className="py-12">
 				<h1 className="flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 					Testimonials
