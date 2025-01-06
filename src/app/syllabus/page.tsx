@@ -171,6 +171,7 @@ export default function TimelineDemo() {
 						<Image
 							key={index}
 							src={image}
+							loading="eager"
 							alt={`Image ${index + 1}`}
 							width={500}
 							height={500}

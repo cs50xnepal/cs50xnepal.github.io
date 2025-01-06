@@ -33,7 +33,7 @@ export const TeamList: ITeam[] = [
 	},
 	{
 		image: 'Mahesh Chaudhary.jpg',
-		badge: 'Alpha MLSA',
+		badge: 'Beta MLSA',
 		name: 'Mahesh Chaudhary',
 		role: 'University Lead',
 	},

@@ -34,7 +34,7 @@ export default function Track() {
 		{
 			title: '3. Build Your AI Solution',
 			description:
-				'Leverage Python, TensorFlow, or other tools to bring your idea to life. Train machine learning models, integrate APIs, and create interactive solutions to solve real-world problems. Push the limits of your coding skills while applying concepts learned from CS50.',
+				'Leverage Python, or other tools to bring your idea to life. Train machine learning models, integrate APIs, and create interactive solutions to solve real-world problems. Push the limits of your coding skills while applying concepts learned from CS50.',
 			icon: <Image src={Build} alt="Build Light" width={100} height={100} />,
 		},
 		{

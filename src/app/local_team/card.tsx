@@ -32,6 +32,7 @@ export default function App({ Teams }: { Teams: ITeam[] }) {
 										}
 										width={270}
 										height={200}
+										loading="eager"
 									/>
 								</CardBody>
 								<CardHeader className="flex-col items-start">

@@ -52,7 +52,8 @@ export const HoverEffect = ({
 							alt={item.title}
 							width={150}
 							height={150}
-							className="bg-textBlue rounded-full "
+							loading="eager"
+							className="bg-textBlue w-48 h-48 rounded-full"
 						/>
 						<CardTitle>{item.title}</CardTitle>
 						<CardDescription>{item.description}</CardDescription>

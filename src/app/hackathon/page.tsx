@@ -3,11 +3,14 @@ import Hero from './main';
 import Track from './features';
 import Register from './register';
 import FAQ from './FAQ';
+import Resources from './Resources';
+import Team from './Team';
 export default function Instructor() {
 	return (
 		<>
 			<Hero />
-			<div className="display-flex justify-center bg-gray-50 px-4 py-4">
+			<Team />
+			<div className="display-flex justify-center bg-gray-50 px-4 py-12">
 				<h1 className="px-6 flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 					How Does it Work?
 				</h1>
@@ -18,6 +21,7 @@ export default function Instructor() {
 				<Track />
 			</div>
 			<FAQ />
+			<Resources />
 			<Register />
 		</>
 	);
