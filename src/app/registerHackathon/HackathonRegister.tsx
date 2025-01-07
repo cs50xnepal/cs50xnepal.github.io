@@ -34,7 +34,7 @@ export default function HackathonRegister() {
 						</p>
 
 						<Link
-							href="https://cs50xnepal.ioepc.edu.np/registerHackathon"
+							href="https://cs50xnepal.ioepc.edu.np/hackathon"
 							className="bg-red-600 text-offWhite px-6 py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-red-800 focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all">
 							Register Now 🚀
 						</Link>
