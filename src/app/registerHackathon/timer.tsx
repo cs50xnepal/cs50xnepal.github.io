@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import confetti from 'canvas-confetti';
 
 export default function Timer() {
@@ -41,36 +40,33 @@ export default function Timer() {
 
 		return () => clearInterval(interval);
 	}, []);
+
 	return (
 		<>
 			{over ? (
-				<div className="flex flex-col items-center text-center text-textBlue py-4">
+				<div className="flex flex-col items-center text-center text-white  rounded-lg shadow-xl">
 					<h1 className="text-3xl font-extrabold animate-bounce">
 						🎉 Hackathon is Ongoing!
 					</h1>
 				</div>
 			) : (
-				<div className="flex items-center text-textBlue bg-offWhite rounded-lg mt-8 px-8 flex-col py-8">
-					<h1 className=" pb-8 flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
-						{' '}
-						Countdown to Hackathon{' '}
-					</h1>
-					<div className="flex flex-col sm:flex-row">
+				<div className="flex items-center text-white rounded-lg px-8 flex-col">
+					<div className="flex flex-col sm:flex-row text-center">
 						<div className="flex flex-col px-8 py-4">
 							<span className="time text-6xl font-bold ">{days}</span>
-							<span className="label  uppercase  tracking-widest">Days</span>
+							<span className="label uppercase tracking-widest">Days</span>
 						</div>
 						<div className="flex flex-col px-8 py-4">
 							<span className="time text-6xl font-bold">{hours}</span>
-							<span className="label  uppercase  tracking-widest">Hours</span>
+							<span className="label uppercase tracking-widest">Hours</span>
 						</div>
 						<div className="flex flex-col px-8 py-4">
 							<span className="time text-6xl font-bold">{minutes}</span>
-							<span className="label  uppercase  tracking-widest">Minutes</span>
+							<span className="label uppercase tracking-widest">Minutes</span>
 						</div>
 						<div className="flex flex-col px-8 py-4">
 							<span className="time text-6xl font-bold">{seconds}</span>
-							<span className="label  uppercase  tracking-widest">Seconds</span>
+							<span className="label uppercase tracking-widest">Seconds</span>
 						</div>
 					</div>
 				</div>
