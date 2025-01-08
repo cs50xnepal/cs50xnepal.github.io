@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Link } from '@nextui-org/react';
 import Timer from './timer';
+import XHack from '@/app/registerHackathon/assets/x - Hack red.svg';
 
 export default function Hero() {
 	return (
@@ -14,6 +15,9 @@ export default function Hero() {
 							<h1 className="px-6 text-lg text-primaryRed font-bold">
 								📅 11-13 Magh
 							</h1>
+							<div className="flex justify-center items-center">
+								<Image src={XHack} alt="XHack Logo" width={300} height={300} />
+							</div>
 							<p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
 								<span className="relative inline-flex sm:inline">
 									<span className="bg-gradient-to-r from-[#F3AF06] via-[#FF44EC] to-[#F3AF06] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>

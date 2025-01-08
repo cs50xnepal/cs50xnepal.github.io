@@ -21,7 +21,7 @@ export default function HackathonRegister() {
 				<div className="relative z-10 text-white text-2xl py-4">
 					<div className="justify-center flex flex-col items-center gap-6">
 						<div className="flex items-center justify-center">
-							<Image src={XHack} width={400} height={200} alt="X Hack Logo" />
+							<Image src={XHack} width={200} height={200} alt="X Hack Logo" />
 						</div>
 						<Timer />
 						<p className="text-sm py-2 px-6 sm:px-28 lg:w-[75%] mx-auto text-center text-gray-200 font-medium">
