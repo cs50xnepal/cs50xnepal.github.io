@@ -1,14 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
+import XHack from './assets/x - Hack red.svg';
 export default function Page() {
 	return (
 		<>
 			<div>
 				<div>
 					<h1 className="px-6 flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950 py-2 my-10">
-						Hackathon Registration Portal
+						X-Hack 3.0 Registration Portal
 					</h1>
+				</div>
+				<div className="flex justify-center items-center">
+					<Image
+						src={XHack}
+						width={200}
+						height={200}
+						loading="eager"
+						alt="XHack Image"
+					/>
 				</div>
 				<div className="bg-offWhite text-textBlue min-h-screen flex flex-col justify-center items-center py-10">
 					{' '}
@@ -17,7 +27,7 @@ export default function Page() {
 							⚡ Join the Ultimate Innovation Challenge! ⚡
 						</h2>
 						<p className="text-sm text-textBlue font-medium">
-							🚀 Welcome to the Hackathon Registration Portal! This is your
+							🚀 Welcome to the X-Hack 3.0 Registration Portal! This is your
 							opportunity to bring your boldest ideas to life. Whether
 							you&apos;re a code wizard 🧙‍♂️, a design guru 🎨, or just someone
 							with big dreams, there&apos;s a spot for you here. Let&apos;s
@@ -36,7 +46,7 @@ export default function Page() {
 					{/* Embed Form */}
 					<div className="flex justify-center items-center w-3/4">
 						<iframe
-							src="https://docs.google.com/forms/d/e/1FAIpQLSdHdKSA9dcNaaI_vszVKoqs67MwqYqcZNzIHlK_yjmE8iAmzA/closedform"
+							src="https://forms.gle/cj1HaYisRrptzpuFA"
 							width="100%"
 							height="1000"
 							className="border-2 border-gray-300 rounded-lg"

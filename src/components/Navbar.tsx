@@ -101,7 +101,7 @@ export default function App() {
 			<NavbarContent justify="end">
 				<Link href="/hackathon" size="md">
 					<NavbarItem className="sm:px-0 sm:py-2 text-base px-4 py-1 rounded-md text-offWhite border-cs50Yellow bg-cs50Yellow border-3 transition-all duration-500 hover:bg-offWhite hover:text-cs50Yellow hover:border-cs50Yellow md:px-6 md:py-2 font-bold">
-						XHack 2025 🔥
+						X-Hack 3.0 🔥
 					</NavbarItem>
 				</Link>
 			</NavbarContent>

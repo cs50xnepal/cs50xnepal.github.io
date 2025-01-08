@@ -15,35 +15,17 @@ export default function Resources() {
 						Resources and Materials
 					</h1>
 					<p className="text-sm py-3 px-6 sm:px-16 mx-auto  text-center text-textBlue ">
-						Explore all the essential resources to guide you through CS50 AI
-						Hackathon with ease.
+						Explore all the essential resources to guide you through X-Hack 3.0
+						with ease.
 					</p>
 					<div className="px-8 sm:items-center sm:justify-center sm:px-4 sm:space-x-5 sm:flex">
 						<Link
-							href="/#faqs"
-							title=""
+							href="https://drive.google.com/file/d/15yBK1bvnRBU1Cq11xaDDpPFpOGORIaqC/view?usp=sharing"
+							target="_blank"
 							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
 							role="button">
 							<FaFileAlt />
-							<span className="px-1">View Regulations</span>
-						</Link>
-						<Link
-							href="/#faqs"
-							title=""
-							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
-							role="button">
-							<FaFileAlt />
-							<span className="px-1">View Guidelines</span>
-						</Link>
-					</div>
-					<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex py-2">
-						<Link
-							href="/#faqs"
-							title=""
-							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
-							role="button">
-							<FaFileAlt />{' '}
-							<span className="px-1">View Workshop Materials</span>
+							<span className="px-1">View Rulebook</span>
 						</Link>
 					</div>
 				</div>

@@ -21,7 +21,7 @@ export default function Register() {
 						SIGN UP NOW FOR THE HACKATHON!!
 					</h1>
 					<p className="text-sm py-3 px-6 sm:px-28 lg:w-[80%] mx-auto  text-center text-textBlue ">
-						Spots are limited, so don’t wait! Participation is completely free.
+						Spots are limited, so don’t wait!.
 					</p>
 					<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex">
 						<Link
@@ -43,7 +43,7 @@ export default function Register() {
 									strokeLinejoin="round"
 								/>
 							</svg>
-							Sign Up for Hackathon
+							Sign Up for X-Hack 🔥
 						</Link>
 					</div>
 				</div>

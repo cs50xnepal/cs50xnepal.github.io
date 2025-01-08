@@ -15,10 +15,9 @@ export default function Hero() {
 								📅 11-13 Magh
 							</h1>
 							<p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-								CS50 AI
 								<span className="relative inline-flex sm:inline">
 									<span className="bg-gradient-to-r from-[#F3AF06] via-[#FF44EC] to-[#F3AF06] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-									<span className="relative"> Hackathon </span>
+									<span className="relative"> X-Hack 3.0 </span>
 								</span>
 							</p>
 							<Timer />
@@ -42,7 +41,7 @@ export default function Hero() {
 											strokeLinejoin="round"
 										/>
 									</svg>
-									Sign Up for Hackathon
+									Sign Up for X-Hack 🔥
 								</Link>
 							</div>
 
