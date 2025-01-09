@@ -9,7 +9,7 @@ import { Link } from '@nextui-org/react';
 export default function FAQ() {
 	return (
 		<>
-			<div className="py-12 sm:pe-8 flex flex-col sm:flex-row justify-center align-start bg-offPurple">
+			<div className="py-12 sm:pe-8 flex flex-col sm:flex-row justify-center align-start bg-offWhite">
 				<div className="flex flex-col justify-center items-center pe-10 py-4 sm:py-0 lg:w-2/4">
 					<h1 className="px-6 flex text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 						Have a Question?

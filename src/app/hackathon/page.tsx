@@ -5,6 +5,7 @@ import Register from './register';
 import FAQ from './FAQ';
 import Resources from './Resources';
 import Team from './Team';
+import Sponsors from './Sponsors';
 export default function Instructor() {
 	return (
 		<>
@@ -20,6 +21,7 @@ export default function Instructor() {
 				</p>
 				<Track />
 			</div>
+			<Sponsors />
 			<FAQ />
 			<Resources />
 			<Register />

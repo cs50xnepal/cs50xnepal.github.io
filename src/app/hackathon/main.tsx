@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Link } from '@nextui-org/react';
 import Timer from './timer';
 import XHack from '@/app/registerHackathon/assets/x - Hack red.svg';
+import { FaAddressCard, FaFileAlt } from 'react-icons/fa';
 
 export default function Hero() {
 	return (
@@ -16,18 +17,21 @@ export default function Hero() {
 								📅 11-13 Magh
 							</h1>
 							<div className="flex justify-center items-center">
-								<Image src={XHack} alt="XHack Logo" width={300} height={300} />
+								<Image src={XHack} alt="XHack Logo" width={600} height={600} />
 							</div>
-							<p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-								<span className="relative inline-flex sm:inline">
-									<span className="bg-gradient-to-r from-[#F3AF06] via-[#FF44EC] to-[#F3AF06] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-									<span className="relative"> X-Hack 3.0 </span>
-								</span>
-							</p>
+							<div>
+								<p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
+									<span className="relative inline-flex sm:inline">
+										<span className="bg-gradient-to-r from-[#F3AF06] via-[#FF44EC] to-[#F3AF06] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
+										<span className="relative"> X-Hack 3.0 </span>
+									</span>
+								</p>
+							</div>
+
 							<Timer />
 							<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
 								<Link
-									href="/registerHackathon"
+									href="https://tinyurl.com/CS50AIHackathon"
 									title=""
 									className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold bg-gray-900 transition-all duration-200 border-2 text-offWhite border-gray-900 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-transparent focus:bg-transparent hover:text-gray-900 focus:text-gray-900 hover:border-gray-400 focus:border-gray-400"
 									role="button">
@@ -46,6 +50,13 @@ export default function Hero() {
 										/>
 									</svg>
 									Sign Up for X-Hack 🔥
+								</Link>
+								<Link
+									href="https://tinyurl.com/CS50AIHackathonRuleBook"
+									title=""
+									className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
+									role="button">
+									<FaFileAlt /> View Rulebook
 								</Link>
 							</div>
 

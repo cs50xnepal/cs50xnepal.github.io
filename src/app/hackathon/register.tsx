@@ -7,7 +7,7 @@ import { Link } from '@nextui-org/react';
 export default function Register() {
 	return (
 		<>
-			<div className="py-8 flex flex-col sm:flex-row justify-center align-center bg-offPurple">
+			<div className="py-8 flex flex-col sm:flex-row justify-center align-center bg-offWhite">
 				<div className="flex justify-center items-center px-4 sm:px-8">
 					<Image
 						src={RegisterIm}
@@ -25,7 +25,7 @@ export default function Register() {
 					</p>
 					<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex">
 						<Link
-							href="/registerHackathon"
+							href="https://tinyurl.com/CS50AIHackathon"
 							title=""
 							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold bg-gray-900 transition-all duration-200 border-2 text-offWhite border-gray-900 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-transparent focus:bg-transparent hover:text-gray-900 focus:text-gray-900 hover:border-gray-400 focus:border-gray-400"
 							role="button">
