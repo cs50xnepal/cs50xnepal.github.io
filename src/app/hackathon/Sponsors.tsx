@@ -16,11 +16,11 @@ const sponsors: Sponsors[] = [
 		type: 'Prime Supporter',
 	},
 	{
-		image: 'FSU.png',
+		image: 'fsu.ico',
 		type: 'Prime Supporter',
 	},
 	{
-		image: 'Birat.png',
+		image: 'birat_kshitiz.webp',
 		type: 'Diamond Sponsor',
 	},
 	{
@@ -28,11 +28,15 @@ const sponsors: Sponsors[] = [
 		type: 'AI Impact Partner',
 	},
 	{
+		image: 'Namaste.png',
+		type: 'Communication Partner',
+	},
+	{
 		image: 'MsLearn.png',
 		type: 'Community Partner',
 	},
 	{
-		image: 'libre.png',
+		image: 'libre_office.png',
 		type: 'Community Partner',
 	},
 	{
@@ -45,6 +49,10 @@ const sponsors: Sponsors[] = [
 	},
 	{
 		image: 'Mahendra Morang.png',
+		type: 'Bronze Sponsor',
+	},
+	{
+		image: 'Yojana.svg',
 		type: 'Bronze Sponsor',
 	},
 	{
@@ -68,6 +76,10 @@ const sponsors: Sponsors[] = [
 		type: 'Supporter',
 	},
 	{
+		image: 'NOF.png',
+		type: 'Supporter',
+	},
+	{
 		image: 'numa.png',
 		type: 'Supporter',
 	},
@@ -75,7 +87,7 @@ const sponsors: Sponsors[] = [
 
 export default function Sponsors() {
 	return (
-		<div className="py-12 sm:pe-8 flex flex-col justify-center bg-offPurple">
+		<div className="py-12 sm:pe-8 flex flex-col justify-center text-center items-center bg-offPurple">
 			<h1 className="text-6xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 				Our Supporters
 			</h1>
@@ -127,12 +139,35 @@ export default function Sponsors() {
 				</div>
 			</div>
 			<div className="py-8 flex justify-center flex-col items-center gap-8">
+				<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
+					Bronze Sponsor
+				</h1>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+					{sponsors.map(
+						(sponsor, index) =>
+							sponsor.type === 'Bronze Sponsor' && (
+								<div
+									key={index}
+									className="flex justify-center items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
+									<Image
+										src={`/images/hackathon/${sponsor.image}`}
+										alt={sponsor.type}
+										width={200}
+										height={100}
+										className="transition-transform hover:scale-125 duration-500  rounded-lg"
+									/>
+								</div>
+							)
+					)}
+				</div>
+			</div>
+			<div className="py-8 flex justify-center flex-col items-center gap-8">
 				{sponsors.map((sponsor, index) =>
 					sponsor.type === 'Diamond Sponsor' ||
 					sponsor.type === 'AI Impact Partner' ||
 					sponsor.type === 'Internet Partner' ||
 					sponsor.type === 'Printing Partner' ||
-					sponsor.type === 'Bronze Sponsor' ||
+					sponsor.type === 'Communication Partner' ||
 					sponsor.type === '3D Design and Hardware Partner' ? (
 						<React.Fragment key={index}>
 							<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
@@ -174,7 +209,7 @@ export default function Sponsors() {
 					)}
 				</div>
 			</div>
-			<div className="py-8 flex justify-center flex-col items-center gap-8">
+			<div className="py-8 flex justify-center flex-col items-center gap-8 px-2">
 				<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 					Supporter
 				</h1>

@@ -7,7 +7,7 @@ export interface teamType {
 	image: string;
 	title: string;
 	role: string;
-	contact: number;
+	contact?: number;
 }
 
 const teamList: teamType[] = [
@@ -23,6 +23,26 @@ const teamList: teamType[] = [
 		role: 'Hackathon Co-Incharge',
 		contact: 9841234567,
 	},
+	{
+		image: 'kendra_pokhrel.jpg',
+		title: 'Kendra Pokhrel',
+		role: 'Organizing Team',
+	},
+	{
+		image: 'Abhishek_Niraula.jpg',
+		title: 'Abhishek Niraula',
+		role: 'Organizing Team',
+	},
+	{
+		image: 'Niraj_bista.jpg',
+		title: 'Niraj Bista',
+		role: 'Organizing Team',
+	},
+	{
+		image: 'Yogendra.jpeg',
+		title: 'Yogendra Karn',
+		role: 'Organizing Team',
+	},
 ];
 
 export default function Team() {
@@ -37,7 +57,7 @@ export default function Team() {
 					innovators, organizers, and mentors driving this incredible hackathon
 					forward.
 				</p>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-8 max-w-max mx-auto">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 max-w-max mx-auto">
 					<CardHack teams={teamList} />
 				</div>
 			</div>
