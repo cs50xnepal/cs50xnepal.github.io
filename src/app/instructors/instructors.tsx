@@ -1,6 +1,5 @@
 import Pukar from './assets/pukar-karki.png';
 import Mahesh from './assets/mahesh-chaudhary.png';
-import Suraj from './assets/suraj-bhattarai.png';
 import Sudip from './assets/Sudip.jpg';
 import Pujan from './assets/Pujan.jpg';
 import Basanta from './assets/Basanta.jpg';
@@ -16,12 +15,6 @@ export const instructorList: IInstructorCard[] = [
 		description:
 			'Proficient in Big Data technologies, Mr. Karki is a young and energetic computer engineering (Asst.) professor at IOE Purwanchal Campus.',
 		avatar: Pukar,
-	},
-	{
-		title: 'Suraj Bhattarai',
-		description:
-			'Curious and insightful, Mr Bhattarai is an awesome tech community leader, mentor & instructor and equally a cloud enthusiast.',
-		avatar: Suraj,
 	},
 	{
 		title: 'Mahesh Chaudhary',

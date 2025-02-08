@@ -26,12 +26,6 @@ export const TeamList: ITeam[] = [
 		role: 'Advisor',
 	},
 	{
-		image: 'suraj_bhattrai.png',
-		badge: 'Beta MLSA',
-		name: 'Suraj Bhattarai',
-		role: 'Nepal Coordinator',
-	},
-	{
 		image: 'Mahesh Chaudhary.jpg',
 		badge: 'Beta MLSA',
 		name: 'Mahesh Chaudhary',

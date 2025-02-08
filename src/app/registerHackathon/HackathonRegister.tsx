@@ -2,11 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import HackathonIM from './assets/hackathon.png';
-import { FaLaptopCode } from 'react-icons/fa';
 import XHack from './assets/X Hack - white.svg';
 import Timer from './timer';
 
-export default function HackathonRegister() {
+export default function HackathonBanner() {
 	return (
 		<>
 			<div
@@ -23,17 +22,24 @@ export default function HackathonRegister() {
 						<div className="flex items-center justify-center">
 							<Image src={XHack} width={200} height={200} alt="X Hack Logo" />
 						</div>
+
 						<Timer />
+
 						<p className="text-sm py-2 px-6 sm:px-28 lg:w-[75%] mx-auto text-center text-gray-200 font-medium">
-							✨ Ready to unleash your creativity? Dive into an
-							adrenaline-packed coding adventure where your ideas come to life.
-							💻 Join now and be part of something extraordinary! 🌟
+							💡 The CS50 AI Hackathon was an incredible journey of innovation,
+							collaboration, and problem-solving! A huge{' '}
+							<span className="text-primaryRed font-bold text-lg">
+								THANK YOU
+							</span>{' '}
+							to all participants, mentors, sponsors, and organizers who made
+							this event possible. Your passion for AI and creativity truly
+							shined! ✨
 						</p>
 
 						<Link
-							href="https://cs50xnepal.ioepc.edu.np/hackathon"
-							className="bg-red-600 text-offWhite px-6 py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-red-800 focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all">
-							Register Now 🚀
+							href="https://excess.ioepc.edu.np/gallery"
+							className="bg-gray-900 text-offWhite px-6 py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-gray-600 focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-all">
+							Hackathon Gallery 🤟
 						</Link>
 					</div>
 				</div>

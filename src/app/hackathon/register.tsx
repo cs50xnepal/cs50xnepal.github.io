@@ -25,25 +25,10 @@ export default function Register() {
 					</p>
 					<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex">
 						<Link
-							href="https://tinyurl.com/CS50AIHackathon"
 							title=""
-							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold bg-gray-900 transition-all duration-200 border-2 text-offWhite border-gray-900 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-transparent focus:bg-transparent hover:text-gray-900 focus:text-gray-900 hover:border-gray-400 focus:border-gray-400"
+							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold bg-gray-900 transition-all duration-200 border-2 text-red-600 border-gray-900 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-transparent focus:bg-transparent hover:text-red-600 focus:text-red-600 hover:border-gray-400 focus:border-gray-400"
 							role="button">
-							<svg
-								className="w-5 h-5 mr-2"
-								viewBox="0 0 18 18"
-								fill="none"
-								stroke="currentColor"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
-									strokeWidth="2"
-									strokeMiterlimit="10"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								/>
-							</svg>
-							Sign Up for X-Hack 🔥
+							❗ Registration Has Ended
 						</Link>
 					</div>
 				</div>

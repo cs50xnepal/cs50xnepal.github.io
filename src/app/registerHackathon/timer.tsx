@@ -46,7 +46,7 @@ export default function Timer() {
 			{over ? (
 				<div className="flex flex-col items-center text-center text-white  rounded-lg shadow-xl">
 					<h1 className="text-3xl font-extrabold animate-bounce">
-						🎉 Hackathon is Ongoing!
+						🎉 Hackathon Has Ended!
 					</h1>
 				</div>
 			) : (

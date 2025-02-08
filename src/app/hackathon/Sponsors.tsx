@@ -8,80 +8,92 @@ interface Sponsors {
 
 const sponsors: Sponsors[] = [
 	{
-		image: 'Nepse.png',
+		image: 'title.svg',
 		type: 'Title Sponsor',
 	},
 	{
-		image: 'tribhuvan_uni.png',
-		type: 'Prime Supporter',
-	},
-	{
-		image: 'fsu.ico',
-		type: 'Prime Supporter',
-	},
-	{
-		image: 'birat_kshitiz.webp',
+		image: 'Diamod Sponsor.svg',
 		type: 'Diamond Sponsor',
 	},
 	{
-		image: 'Datacamp.png',
-		type: 'AI Impact Partner',
+		image: 'Bronze Sponsor.svg',
+		type: 'Bronze Sponsor',
 	},
 	{
-		image: 'Namaste.png',
-		type: 'Communication Partner',
+		image: 'Bronze Sponsor (2).svg',
+		type: 'Bronze Sponsor',
 	},
 	{
-		image: 'MsLearn.png',
-		type: 'Community Partner',
+		image: 'Data Hackathon Partner.svg',
+		type: 'Data Hackathon Partner',
 	},
 	{
-		image: 'libre_office.png',
-		type: 'Community Partner',
+		image: 'Digital Learning Partner.svg',
+		type: 'Digital Learning Partner',
 	},
 	{
-		image: 'Vianet.png',
+		image: 'Internet Partner.svg',
 		type: 'Internet Partner',
 	},
 	{
-		image: 'Frenzs.png',
+		image: 'Printing Partner.svg',
 		type: 'Printing Partner',
 	},
 	{
-		image: 'Mahendra Morang.png',
-		type: 'Bronze Sponsor',
+		image: 'Hardware Partner.svg',
+		type: 'Hardware Partner',
 	},
 	{
-		image: 'Yojana.svg',
-		type: 'Bronze Sponsor',
+		image: 'Communication Partner.svg',
+		type: 'Communication Partner',
 	},
 	{
-		image: 'AaraTech.png',
-		type: '3D Design and Hardware Partner',
+		image: 'Emerging Startup Partner.svg',
+		type: 'Emerging Startup Partner',
 	},
 	{
-		image: 'scrimba.png',
-		type: 'Supporter',
+		image: 'General Sponsor.svg',
+		type: 'General Sponsor',
 	},
 	{
-		image: 'SFL.png',
-		type: 'Supporter',
+		image: 'General Sponsor (2).svg',
+		type: 'General Sponsor',
 	},
 	{
-		image: 'AV_Electronics.png',
-		type: 'Supporter',
+		image: 'General Sponsor (3).svg',
+		type: 'General Sponsor',
 	},
 	{
-		image: 'Utthan.png',
-		type: 'Supporter',
+		image: 'General Sponsor (4).svg',
+		type: 'General Sponsor',
 	},
 	{
-		image: 'NOF.png',
-		type: 'Supporter',
+		image: 'General Sponsor (5).svg',
+		type: 'General Sponsor',
 	},
 	{
-		image: 'numa.png',
-		type: 'Supporter',
+		image: 'Supporting Partner.svg',
+		type: 'Supporting Partner',
+	},
+	{
+		image: 'Supporting  Partner.svg',
+		type: 'Supporting Partner',
+	},
+	{
+		image: 'Supporting  Partner (2).svg',
+		type: 'Supporting Partner',
+	},
+	{
+		image: 'Supporting  Partner (3).svg',
+		type: 'Supporting Partner',
+	},
+	{
+		image: 'Supporting  Partner (4).svg',
+		type: 'Supporting Partner',
+	},
+	{
+		image: 'AWS Cloud Club.svg',
+		type: 'Supporting Partner',
 	},
 ];
 
@@ -97,16 +109,17 @@ export default function Sponsors() {
 			</p>
 			<div className="py-8 flex justify-center flex-col items-center gap-8">
 				{sponsors.map((sponsor, index) =>
-					sponsor.type === 'Title Sponsor' ? (
+					sponsor.type === 'Title Sponsor' ||
+					sponsor.type === 'Diamond Sponsor' ? (
 						<React.Fragment key={index}>
 							<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 								{sponsor.type}
 							</h1>
-							<div className="flex justify-center items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
+							<div className="flex justify-center items-center bg-white shadow-lg px-12 py-8 rounded-lg max-w-max">
 								<Image
 									src={`/images/hackathon/${sponsor.image}`}
 									alt={sponsor.type}
-									width={200}
+									width={300}
 									height={100}
 									className="transition-transform hover:scale-125 duration-500  rounded-lg"
 								/>
@@ -117,30 +130,7 @@ export default function Sponsors() {
 			</div>
 			<div className="py-8 flex justify-center flex-col items-center gap-8">
 				<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
-					Prime Supporter
-				</h1>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-					{sponsors.map(
-						(sponsor, index) =>
-							sponsor.type === 'Prime Supporter' && (
-								<div
-									key={index}
-									className="flex justify-center items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
-									<Image
-										src={`/images/hackathon/${sponsor.image}`}
-										alt={sponsor.type}
-										width={200}
-										height={100}
-										className="transition-transform hover:scale-125 duration-500  rounded-lg"
-									/>
-								</div>
-							)
-					)}
-				</div>
-			</div>
-			<div className="py-8 flex justify-center flex-col items-center gap-8">
-				<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
-					Bronze Sponsor
+					Bronze Supporter
 				</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 					{sponsors.map(
@@ -148,11 +138,11 @@ export default function Sponsors() {
 							sponsor.type === 'Bronze Sponsor' && (
 								<div
 									key={index}
-									className="flex justify-center items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
+									className="flex justify-center items-center bg-white shadow-lg px-12 py-8 rounded-lg max-w-max">
 									<Image
 										src={`/images/hackathon/${sponsor.image}`}
 										alt={sponsor.type}
-										width={200}
+										width={300}
 										height={100}
 										className="transition-transform hover:scale-125 duration-500  rounded-lg"
 									/>
@@ -163,21 +153,22 @@ export default function Sponsors() {
 			</div>
 			<div className="py-8 flex justify-center flex-col items-center gap-8">
 				{sponsors.map((sponsor, index) =>
-					sponsor.type === 'Diamond Sponsor' ||
-					sponsor.type === 'AI Impact Partner' ||
+					sponsor.type === 'Data Hackathon Partner' ||
+					sponsor.type === 'Digital Learning Partner' ||
 					sponsor.type === 'Internet Partner' ||
 					sponsor.type === 'Printing Partner' ||
+					sponsor.type === 'Hardware Partner' ||
 					sponsor.type === 'Communication Partner' ||
-					sponsor.type === '3D Design and Hardware Partner' ? (
+					sponsor.type === 'Emerging Startup Partner' ? (
 						<React.Fragment key={index}>
 							<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
 								{sponsor.type}
 							</h1>
-							<div className="flex justify-center items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
+							<div className="flex justify-center items-center bg-white shadow-lg px-12 py-8 rounded-lg max-w-max">
 								<Image
 									src={`/images/hackathon/${sponsor.image}`}
 									alt={sponsor.type}
-									width={200}
+									width={300}
 									height={100}
 									className="transition-transform hover:scale-125 duration-500  rounded-lg"
 								/>
@@ -186,21 +177,21 @@ export default function Sponsors() {
 					) : null
 				)}
 			</div>
-			<div className="py-8 flex justify-center flex-col items-center gap-8">
+			<div className="py-8 flex justify-center flex-col items-center gap-8 px-2">
 				<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
-					Community Partner
+					General Sponsor
 				</h1>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div className="flex flex-wrap gap-4 justify-center items-center">
 					{sponsors.map(
 						(sponsor, index) =>
-							sponsor.type === 'Community Partner' && (
+							sponsor.type === 'General Sponsor' && (
 								<div
 									key={index}
-									className="flex justify-center items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
+									className="flex justify-center h-56 items-center bg-white shadow-lg px-12 py-8 rounded-lg max-w-max">
 									<Image
 										src={`/images/hackathon/${sponsor.image}`}
 										alt={sponsor.type}
-										width={200}
+										width={300}
 										height={100}
 										className="transition-transform hover:scale-125 duration-500  rounded-lg"
 									/>
@@ -211,19 +202,19 @@ export default function Sponsors() {
 			</div>
 			<div className="py-8 flex justify-center flex-col items-center gap-8 px-2">
 				<h1 className="text-4xl text-center font-black items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950">
-					Supporter
+					Supporting Partner
 				</h1>
 				<div className="flex flex-wrap gap-4 justify-center items-center">
 					{sponsors.map(
 						(sponsor, index) =>
-							sponsor.type === 'Supporter' && (
+							sponsor.type === 'Supporting Partner' && (
 								<div
 									key={index}
-									className="flex justify-center h-56 items-center bg-offWhite shadow-lg px-12 py-8 rounded-lg max-w-max">
+									className="flex justify-center h-56 items-center bg-white shadow-lg px-12 py-8 rounded-lg max-w-max">
 									<Image
 										src={`/images/hackathon/${sponsor.image}`}
 										alt={sponsor.type}
-										width={200}
+										width={300}
 										height={100}
 										className="transition-transform hover:scale-125 duration-500  rounded-lg"
 									/>

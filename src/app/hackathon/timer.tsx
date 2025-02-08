@@ -46,7 +46,7 @@ export default function Timer() {
 			{over ? (
 				<div className="flex flex-col items-center text-center text-textBlue py-4">
 					<h1 className="text-3xl font-extrabold animate-bounce">
-						🎉 X-Hack 3.0 is Ongoing!
+						🎉 X-Hack 3.0 Has Successfully Ended!
 					</h1>
 				</div>
 			) : (
