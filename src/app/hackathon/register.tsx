@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import RegisterIm from '@/app/hackathon/assets/Register.svg';
 import { Link } from '@nextui-org/react';
+import { FaExclamationTriangle } from 'react-icons/fa';
 
 export default function Register() {
 	return (
@@ -26,9 +27,9 @@ export default function Register() {
 					<div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex">
 						<Link
 							title=""
-							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold bg-gray-900 transition-all duration-200 border-2 text-red-600 border-gray-900 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 hover:bg-transparent focus:bg-transparent hover:text-red-600 focus:text-red-600 hover:border-gray-400 focus:border-gray-400"
+							className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold bg-red-600 transition-all duration-200 border-2 text-offWhite border-red-600 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 hover:bg-transparent focus:bg-transparent hover:text-red-600 focus:text-red-600 hover:border-red-400 focus:border-red-400 gap-2"
 							role="button">
-							❗ Registration Has Ended
+							<FaExclamationTriangle /> Registration Has Ended
 						</Link>
 					</div>
 				</div>
