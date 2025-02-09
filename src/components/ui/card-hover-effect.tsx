@@ -4,7 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
-
+import { Chip } from '@nextui-org/react';
+import { div } from 'framer-motion/client';
 export const HoverEffect = ({
 	items,
 	className,
@@ -13,6 +14,8 @@ export const HoverEffect = ({
 		avatar: StaticImport;
 		title: string;
 		description: string;
+		badge?: string[];
+		role?: string;
 	}[];
 	className?: string;
 }) => {
@@ -21,13 +24,15 @@ export const HoverEffect = ({
 	return (
 		<div
 			className={cn(
-				'grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-4',
+				'grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 place-content-center place-items-center py-4',
 				className
 			)}>
 			{items.map((item, idx) => (
 				<div
 					key={idx + 1}
-					className="relative group  block p-2 h-full w-full"
+					className={`relative group  block p-2 h-full w-full ${
+						idx === items.length - 1 ? 'md:col-start-2' : ''
+					}`}
 					onMouseEnter={() => setHoveredIndex(idx)}
 					onMouseLeave={() => setHoveredIndex(null)}>
 					<AnimatePresence>
@@ -55,7 +60,23 @@ export const HoverEffect = ({
 							loading="eager"
 							className="bg-textBlue w-48 h-48 rounded-full"
 						/>
+						{item.role && (
+							<Chip className="bg-textBlue text-white text-xs text-center flex justify-center items-center mt-2">
+								{item.role}
+							</Chip>
+						)}
 						<CardTitle>{item.title}</CardTitle>
+						{item.badge && (
+							<div className="flex flex-wrap gap-2 justify-center items-center mt-2">
+								{item.badge.map((badge, idxBadge) => (
+									<p
+										className="bg-cs50Yellow rounded px-2 text-white flex flex-wrap justify-center items-center text-sm"
+										key={idxBadge}>
+										{badge}
+									</p>
+								))}
+							</div>
+						)}
 						<CardDescription>{item.description}</CardDescription>
 					</Card>
 				</div>
@@ -95,7 +116,7 @@ export const CardTitle = ({
 	return (
 		<h4
 			className={cn(
-				'text-textBlue text-lg font-bold tracking-wide mt-4',
+				'text-textBlue text-xl font-bold tracking-wide mt-2',
 				className
 			)}>
 			{children}

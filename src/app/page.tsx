@@ -4,6 +4,7 @@ import FrequentlyAskedQuestion from '../app/faqs/page';
 import AboutUs from '@/app/about/AboutUs';
 import Testimonials from '../app/testimonials/page';
 import Sponsor from '../app/sponsors/page';
+import MadePossibleBy from '../app/madePossibleBy/page';
 import Instructor from './instructors/page';
 import Link from 'next/link';
 import HackathonRegister from './registerHackathon/HackathonRegister';
@@ -53,6 +54,7 @@ export default function Home() {
 			</section>
 			<AboutUs />
 			<Instructor />
+			<MadePossibleBy />
 			<Sponsor />
 			<FrequentlyAskedQuestion />
 			<Testimonials />

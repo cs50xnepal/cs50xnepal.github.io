@@ -44,7 +44,7 @@ export default function App({ Teams }: { Teams: ITeam[] }) {
 											{team.role}
 										</small>
 										{team.badge && (
-											<Chip className="bg-textBlue text-xs text-center flex justify-center items-center">
+											<Chip className="bg-textBlue  text-white text-xs text-center flex justify-center items-center">
 												{team.badge}
 											</Chip>
 										)}

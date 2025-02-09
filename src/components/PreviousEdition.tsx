@@ -10,7 +10,7 @@ export default function PreviousEdition() {
 				<p>
 					Learn more about previous edition of CS50xNepal{' '}
 					<Link
-						href="https://cs50xnepal.ioepc.edu.np"
+						href="https://cs50xnepal.vercel.app/"
 						className="text-blue-500 underline underline-offset-4">
 						here!
 					</Link>

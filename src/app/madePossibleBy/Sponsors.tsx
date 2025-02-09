@@ -6,11 +6,17 @@ import Image, { type StaticImageData } from 'next/image';
 import { type FC, useMemo, useRef } from 'react';
 import { twJoin, twMerge } from 'tailwind-merge';
 
-import Dharan from './assets/dharan.svg';
-import lfLogo from './assets/lf-logo.svg';
-import MLSA from './assets/MLSA.svg';
-import TULogo from './assets/TU-Logo.svg';
-import GithubEducation from './assets/github-education.svg';
+import Dharan from '@/app/madePossibleBy/assets/dharan.svg';
+import IOE from '@/app/madePossibleBy/assets/tuuni.svg';
+import Nepse from '@/app/madePossibleBy/assets/nepse.png';
+import Leapfrog from '@/app/madePossibleBy/assets/leapfrog.svg';
+import GithubEducation from '@/app/madePossibleBy/assets/gitedu.svg';
+import DataCamp from '@/app/madePossibleBy/assets/datacamp_donates.png';
+import MLSA from '@/app/madePossibleBy/assets/msLearn.png';
+import Utthan from '@/app/madePossibleBy/assets/utthan.png';
+import Vianet from '@/app/madePossibleBy/assets/vianet.png';
+import SFL from '@/app/madePossibleBy/assets/sfl.png';
+import NASO from '@/app/madePossibleBy/assets/naso.png';
 
 type Props = {
 	isReversed?: boolean;
@@ -19,10 +25,16 @@ type Props = {
 
 const ICONS: StaticImageData[] = [
 	Dharan,
-	lfLogo,
-	MLSA,
-	TULogo,
+	IOE,
+	Nepse,
+	Leapfrog,
 	GithubEducation,
+	DataCamp,
+	MLSA,
+	Utthan,
+	SFL,
+	Vianet,
+	NASO,
 ];
 
 const ELEMENTS = [...ICONS, ...ICONS];

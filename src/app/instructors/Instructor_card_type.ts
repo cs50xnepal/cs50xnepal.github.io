@@ -4,4 +4,6 @@ export type IInstructorCard = {
     avatar: StaticImport
     title: string
     description: string
+	badge?: string[]
+	role?: string
 }
