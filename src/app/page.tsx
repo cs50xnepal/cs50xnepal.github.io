@@ -7,12 +7,12 @@ import Sponsor from '../app/sponsors/page';
 import MadePossibleBy from '../app/madePossibleBy/page';
 import Instructor from './instructors/page';
 import Link from 'next/link';
-import HackathonRegister from './registerHackathon/HackathonRegister';
+// import HackathonRegister from './registerHackathon/HackathonRegister';
 
 export default function Home() {
 	return (
 		<>
-			<HackathonRegister />
+			{/* <HackathonRegister /> */}
 			<section className="h-full sm:h-[85vh] items-center flex bg-offWhite overflow-hidden px-6 sm:px-6 md:px-8 lg:px-24 xl:px-32 mt-10 sm:mt-0">
 				{/* Heading/Introduction */}
 				<div className="flex flex-col items-center sm:flex-row md:gap-0 lg:gap-8 xl:gap-11">
