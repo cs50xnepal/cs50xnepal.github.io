@@ -30,9 +30,7 @@ export const HoverEffect = ({
 			{items.map((item, idx) => (
 				<div
 					key={idx + 1}
-					className={`relative group  block p-2 h-full w-full ${
-						idx === items.length - 1 ? 'md:col-start-2' : ''
-					}`}
+					className={`relative group  block p-2 h-full w-full`}
 					onMouseEnter={() => setHoveredIndex(idx)}
 					onMouseLeave={() => setHoveredIndex(null)}>
 					<AnimatePresence>
@@ -133,7 +131,7 @@ export const CardDescription = ({
 	return (
 		<p
 			className={cn(
-				'mt-4 text-gray-400 tracking-wide leading-relaxed text-sm',
+				'mt-4 text-gray-400 tracking-wide font-medium leading-relaxed text-sm',
 				className
 			)}>
 			{children}

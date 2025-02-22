@@ -1,5 +1,7 @@
 import Pukar from './assets/pukar-karki.png';
 import Mahesh from './assets/mahesh-chaudhary.png';
+import Suraj from './assets/suraj-bhattarai.png';
+import Muna from './assets/muna-bhattarai.png';
 import Sudip from './assets/Sudip.jpg';
 import Pujan from './assets/Pujan.jpg';
 import Basanta from './assets/Basanta.jpg';
@@ -16,6 +18,7 @@ import James from './assets/james.jpeg';
 import Pawan from './assets/pawan.jpeg';
 
 import { IInstructorCard } from './Instructor_card_type';
+import { MdUnarchive } from 'react-icons/md';
 
 export const instructorList: IInstructorCard[] = [
 	{
@@ -30,6 +33,20 @@ export const instructorList: IInstructorCard[] = [
 			'Beta MLSA and a tech expert, Mr. Chaudhary is a final-year student at IOE Purwanchal Campus and the President at EXCESS. With strong leadership and vision, he guides his team through tech intuition, empowering them to embrace change and make bold decisions. ',
 		avatar: Mahesh,
 		badge: ['President at EXCESS', 'Beta MLSA'],
+	},
+	{
+		title: 'Suraj Bhattarai',
+		description:
+			'Curious and insightful, Mr Bhattarai is an awesome tech community leader, mentor & instructor and equally a cloud enthusiast.',
+		avatar: Suraj,
+		badge: ['Liaison, LibreOffice Community', 'Beta MLSA'],
+	},
+	{
+		title: 'Muna Bhattarai',
+		description:
+			'GitHub Campus Expert and a rising female leader in tech community, Ms. Bhattarai is a GitHub Campus Expert and beta MLSA.',
+		avatar: Muna,
+		badge: ['Github Campus Expert', 'Beta MLSA'],
 	},
 	{
 		title: 'Sudip Parajuli',
