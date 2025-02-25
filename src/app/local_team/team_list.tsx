@@ -19,12 +19,12 @@ export const TeamList: ITeam[] = [
 		name: 'Pukar Karki',
 		role: 'Advisor',
 	},
-	{
-		image: 'muna-bhattarai.png',
-		badge: 'Github Campus Expert',
-		name: 'Muna Bhattarai',
-		role: 'Advisor',
-	},
+	// {
+	// 	image: 'muna-bhattarai.png',
+	// 	badge: 'Github Campus Expert',
+	// 	name: 'Muna Bhattarai',
+	// 	role: 'Advisor',
+	// },
 	{
 		image: 'Mahesh Chaudhary.jpg',
 		badge: 'Beta MLSA',
@@ -33,23 +33,81 @@ export const TeamList: ITeam[] = [
 	},
 	{
 		image: 'Sudip.jpg',
+		badge: 'Backend Engineer',
 		name: 'Sudip Parajuli',
 		role: 'University Lead',
 	},
 	{
-		image: 'kendra_pokhrel.jpg',
-		name: 'Kendra Pokhrel',
-		role: 'PR and Outreach Team',
-	},
-	{
 		image: 'suwarna_pyakurel.jpg',
 		name: 'Suwarna Pyakurel',
-		role: 'PR and Outreach Team',
+		role: 'PR and Outreach Lead',
 	},
+
 	{
 		image: 'Dhiraj_kc.jpg',
 		name: 'Dhiraj KC',
+		badge: 'Regional Coordinator-SFL',
 		role: 'Planning Head',
+	},
+	{
+		image: 'Basanta_Shrestha.jpg',
+		name: 'Basanta Shrestha',
+		role: 'CS50 Fair Incharge',
+	},
+	{
+		image: 'Suwash_shrestha.jpg',
+		name: 'Suwash Shrestha',
+		role: 'Hackathon Incharge',
+	},
+	{
+		image: 'Sunil_poudel.jpg',
+		name: 'Sunil Paudel',
+		role: 'Creative Lead',
+	},
+	{
+		image: 'alish_thagunna.jpg',
+		name: 'Kishor Thagunna',
+		role: 'Assessment Head',
+	},
+	{
+		image: 'Abhishek_Niraula.jpg',
+		name: 'Abhishek Niraula',
+		role: 'Web Developer',
+	},
+	{
+		image: 'Niraj_bista.jpg',
+		name: 'Niraj Bista',
+		role: 'Web Developer',
+	},
+	{
+		image: 'Nabin_yadav.jpg',
+		name: 'Nabin Yadav',
+		role: 'Web Developer',
+	},
+	{
+		image: 'Suman_khadka.jpg',
+		name: 'Pratikshya Parajuli',
+		role: 'Content Team Lead',
+	},
+	{
+		image: 'Suman_khadka.jpg',
+		name: 'Sneha Karna',
+		role: 'Content Team',
+	},
+	{
+		image: 'Suman_khadka.jpg',
+		name: 'Anusha Shrestha',
+		role: 'Content Team',
+	},
+	{
+		image: 'Suman_khadka.jpg',
+		name: 'Sita Limbu',
+		role: 'Content Team',
+	},
+	{
+		image: 'Yogendra.jpeg',
+		name: 'Yogendra Karn',
+		role: 'Creative Co-Lead',
 	},
 	{
 		image: 'Bijaya.jpg',
@@ -62,43 +120,8 @@ export const TeamList: ITeam[] = [
 		role: 'Resource Manager',
 	},
 	{
-		image: 'Basanta_Shrestha.jpg',
-		name: 'Basanta Shrestha',
-		role: 'CS50 Fair Incharge',
-	},
-	{
-		image: 'Niraj_bista.jpg',
-		name: 'Niraj Bista',
-		role: 'Overviewer',
-	},
-	{
-		image: 'Abhishek_Niraula.jpg',
-		name: 'Abhishek Niraula',
-		role: 'Overviewer',
-	},
-	{
-		image: 'Nabin_yadav.jpg',
-		name: 'Nabin Yadav',
-		role: 'Overviewer',
-	},
-	{
-		image: 'alish_thagunna.jpg',
-		name: 'Kishor Thagunna',
-		role: 'Assessment Head',
-	},
-	{
-		image: 'Sunil_poudel.jpg',
-		name: 'Sunil Paudel',
-		role: 'Creative Lead',
-	},
-	{
-		image: 'Yogendra.jpeg',
-		name: 'Yogendra Karn',
-		role: 'Creative Co-Lead',
-	},
-	{
-		image: 'Suwash_shrestha.jpg',
-		name: 'Suwash Shrestha',
-		role: 'Hackathon Incharge',
+		image: 'kendra_pokhrel.jpg',
+		name: 'Kendra Pokhrel',
+		role: 'PR and Outreach Team',
 	},
 ];

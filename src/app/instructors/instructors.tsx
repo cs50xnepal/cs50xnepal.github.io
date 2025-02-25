@@ -22,7 +22,7 @@ import { MdUnarchive } from 'react-icons/md';
 
 export const instructorList: IInstructorCard[] = [
 	{
-		title: 'Pukar Karki',
+		title: 'Er. Pukar Karki',
 		description:
 			'Proficient in Big Data technologies, Mr. Karki is a young and energetic computer engineering (Asst.) professor at IOE Purwanchal Campus.',
 		avatar: Pukar,
@@ -35,30 +35,18 @@ export const instructorList: IInstructorCard[] = [
 		badge: ['President at EXCESS', 'Beta MLSA'],
 	},
 	{
-		title: 'Suraj Bhattarai',
-		description:
-			'Curious and insightful, Mr Bhattarai is an awesome tech community leader, mentor & instructor and equally a cloud enthusiast.',
-		avatar: Suraj,
-		badge: ['Liaison, LibreOffice Community', 'Beta MLSA'],
-	},
-	{
-		title: 'Muna Bhattarai',
-		description:
-			'GitHub Campus Expert and a rising female leader in tech community, Ms. Bhattarai is a GitHub Campus Expert and beta MLSA.',
-		avatar: Muna,
-		badge: ['Github Campus Expert', 'Beta MLSA'],
-	},
-	{
 		title: 'Sudip Parajuli',
 		description:
 			'Driven and enthusiastic, Mr. Parajuli is a passionate techie and educator with hands-on experience in IoT, robotics, Django, and machine learning, constantly exploring new technologies and empowering others to learn and grow. ',
 		avatar: Sudip,
+		badge: ['Backend Engineer'],
 	},
 	{
 		title: 'Dhiraj K.C',
 		description:
 			'Dhiraj K.C. is a dedicated AI mentor with deep expertise in machine learning and data science. As Creative Operations @ Students For Liberty and Planning Head @ CS50xNepal, he drives impactful initiatives at the intersection of technology and education.',
 		avatar: Dhiraj,
+		badge: ['Regional Coordinator at Students For Liberty'],
 	},
 	{
 		title: 'Basanta Shrestha',
@@ -110,6 +98,7 @@ export const instructorList: IInstructorCard[] = [
 		description:
 			'Mr. Paudel is a final year computer engineering student and Fusemachine Fellow. Actively studying various AI domains and eager to build a career in AI.',
 		avatar: Pujan,
+		badge: ['Fuse Machine Fellow'],
 	},
 	{
 		title: 'Saurab Baral',
@@ -144,5 +133,19 @@ export const instructorList: IInstructorCard[] = [
 		avatar: James,
 		badge: ['COO at Open Knowledge Nepal'],
 		role: 'Guest Speaker',
+	},
+	{
+		title: 'Muna Bhattarai',
+		description:
+			'GitHub Campus Expert and a rising female leader in tech community, Ms. Bhattarai is a GitHub Campus Expert and beta MLSA.',
+		avatar: Muna,
+		badge: ['Github Campus Expert', 'Cloud Engineer'],
+	},
+	{
+		title: 'Suraj Bhattarai',
+		description:
+			'Curious and insightful, Mr Bhattarai is an awesome tech community leader, mentor & instructor and equally a cloud enthusiast.',
+		avatar: Suraj,
+		badge: ['Liaison, LibreOffice Community', 'Beta MLSA'],
 	},
 ];
