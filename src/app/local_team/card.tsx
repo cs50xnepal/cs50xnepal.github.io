@@ -3,6 +3,7 @@ import { ITeam } from '@/app/local_team/team_list_type';
 import { Chip } from '@nextui-org/react';
 import { Image } from '@nextui-org/react';
 import { h1 } from 'framer-motion/client';
+import cn from 'classnames';
 
 export default function App({ Teams }: { Teams: ITeam[] }) {
 	const past_coordinator = {
@@ -23,12 +24,14 @@ export default function App({ Teams }: { Teams: ITeam[] }) {
 					transformative future in artificial intelligence.
 				</p>
 				<div className="flex flex-col justify-center items-center mt-8 mb-4">
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-20 mx-auto justify-center items-center sm:mt-0 mb-4">
+					<div className="flex flex-row flex-wrap gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-20 mx-auto justify-center items-center sm:mt-0 mb-6 sm:mb-12">
 						{Teams.map((team, index) =>
 							team.role === 'Advisor' ? (
 								<Card
 									key={`${index + 1} - ${team.name}`}
-									className="bg-bg-effect bg-cover bg-center bg-offWhite px-1 py-1 max-w-max max-h-max">
+									className={`bg-bg-effect bg-cover bg-center bg-offWhite px-1 py-1 max-w-max max-h-max ${
+										index === 2 ? 'lg:col-span-1 justify-self-center' : ''
+									}`}>
 									<CardBody>
 										<Image
 											alt={`${team.name} Image`}
@@ -103,7 +106,7 @@ export default function App({ Teams }: { Teams: ITeam[] }) {
 					</div>
 				</div>
 				<div className="flex flex-col justify-center items-center mt-8 mb-4">
-					<h1 className="flex text-4xl text-center font-black items-center justify-center  text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950 my-4">
+					<h1 className="flex text-4xl text-center font-black items-center justify-center  text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-900 to-red-950 mt-4 mb-8">
 						Meet Our Past Coordinator
 					</h1>
 					<div className="flex justify-center items-center">

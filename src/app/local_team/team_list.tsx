@@ -46,7 +46,7 @@ export const TeamList: ITeam[] = [
 	{
 		image: 'Dhiraj_kc.jpg',
 		name: 'Dhiraj KC',
-		badge: 'Regional Coordinator-SFL',
+		badge: 'Student for Liberty',
 		role: 'Planning Head',
 	},
 	{
@@ -90,7 +90,7 @@ export const TeamList: ITeam[] = [
 		role: 'Content Team Lead',
 	},
 	{
-		image: 'Suman_khadka.jpg',
+		image: 'sneha_karna.jpeg',
 		name: 'Sneha Karna',
 		role: 'Content Team',
 	},
